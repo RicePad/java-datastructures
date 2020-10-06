@@ -2,9 +2,13 @@ public class Main {
     
     public static void main(String[] args) {
        
-       counter1 = new Counter("counter1");
-       counter1.increment();
-       counter1.getCurrentValue();
-       counter1.toString();
+       Stack myStack = new Stack(5);
+       myStack.push(20);
+       myStack.push(30);
+       myStack.push(40);
+     
+       System.out.println(myStack);
+
+
     }
 }
