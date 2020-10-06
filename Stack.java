@@ -7,7 +7,7 @@ public class Stack {
     public Stack(int maxSize) {
         this.maxSize = maxSize;
         this.stackArray = new long[maxSize];
-        this.top = -1
+        this.top = -1;
     }
 
     public void push(long j){
@@ -22,7 +22,11 @@ public class Stack {
     }
 
     public long peek() {
-        return steakArray[top];
+        return stackArray[top];
+    }
+
+    public boolean isEmpty(){
+      return (top == -1);
     }
 
 }
