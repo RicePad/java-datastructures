@@ -1,16 +1,14 @@
 class Main {
   public static void main(String[] args) {
      
-    Stack myStack = new Stack(5);
-    myStack.push(10);
-    myStack.push(20);
-    myStack.push(30);
-
-    System.out.println(myStack.peek());
-
-    while(!myStack.isEmpty()) {
-      long value = myStack.pop();
-      // System.out.println(value);
-    }
+     Queue myQueue = new Queue(5);
+     myQueue.insert(1);
+     myQueue.insert(100);
+     myQueue.insert(1000);
+     myQueue.insert(10000);
+     myQueue.insert(100000);
+     myQueue.view();
+     System.out.println(myQueue.remove());
+   
   }
 }
