@@ -17,7 +17,7 @@ public class SinglyLinkedList {
         first = newNode;
     }
 
-    public void deleteFirst(){
+    public Node deleteFirst(){
          Node temp = first; 
          first = first.next;
          return temp;
