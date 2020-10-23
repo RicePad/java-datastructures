@@ -28,6 +28,10 @@ public class DoublyLinkedList{
 
     }
 
+    public void insertLast(int data){
+        
+    }
+
   
 
 }
