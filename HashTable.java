@@ -22,10 +22,20 @@ public class HashTable{
     }
 
     private int getNextPrime(int minNumber){
-        
+        for(int i = minNumber, true, i++){
+            if(isPrime(i)){
+                return i;
+            }
+        }
     }
 
     private int hashFunc1(String word){
+        int hashVal = word.hashCode();
+        hashVal = hashVal % arraySize;
+        if(hashVal < 0 ){
+            hashVal += arraySize;
+        }
+        return hashVal;
 
     }
 
