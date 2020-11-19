@@ -52,7 +52,19 @@ public class HashTable{
         return 3 - hashVal % 3;
     }
 
-    public void insert(){
+    public void insert(String word){
+        int hashVal = hashFunc1(word);
+        int stepSize = hashFunc2(word);
+
+        while(hashArray[hashVal] != null){
+            hashVal = hashVal + stepSize;
+            hashVal = hashVal % arraySize;
+
+        }
+
+        hashArray[hashVal] = word;
+        System.out.println("inserted word: " + word);
+        size++
 
     }
 
