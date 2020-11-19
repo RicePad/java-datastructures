@@ -29,6 +29,7 @@ public class HashTable{
         }
     }
 
+    //Defines the index position 
     private int hashFunc1(String word){
         int hashVal = word.hashCode();
         hashVal = hashVal % arraySize;
@@ -39,8 +40,16 @@ public class HashTable{
 
     }
 
+    //Defines Step Size in the array
     private int hashFunc2(String word){
+        int hashVal = word.hashCode();
+        hashVal = hashVal % arraySize;
 
+        if(hashVal < 0) {
+            hashVal += arraySize;
+        }
+
+        return 3 - hashVal % 3;
     }
 
     public void insert(){
