@@ -1,0 +1,1 @@
+//Makes copies of the same array by splitting them.
