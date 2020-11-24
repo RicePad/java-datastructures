@@ -1,5 +1,5 @@
 //function binary search
 
-public static int binarySearch(array, target){
+// public static int binarySearch(array, target){
     
-}
+// }
