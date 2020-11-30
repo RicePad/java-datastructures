@@ -1,3 +1,7 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.Test;
 
 public class StringHelper {
@@ -27,6 +31,11 @@ public class StringHelper {
 		return first2Chars.equals(last2Chars);
     }
     
+    @Test
+    public void testTruncateA(){
+        String message = "AABCD => BC";
+        assertEquals("BC", truncateAInFirst2Positions("AABCD"), message);
+    }
 
     
 
