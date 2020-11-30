@@ -25,7 +25,7 @@ public class Higher {
 
 
 
-//Test  method 
+//Test higher method 
     @Test
     public void testHigher(){
         assertEquals(5, higher(3,3));
