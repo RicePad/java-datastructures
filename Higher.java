@@ -2,6 +2,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+
+// create a class
 public class Higher {
     public static void main(String[] args) {
         int a = 25;
@@ -11,7 +13,7 @@ public class Higher {
 
     }
 
-
+   //add method
     public static int higher(int x, int y) {
         if (x > y) {
             return x;
@@ -23,7 +25,7 @@ public class Higher {
 
 
 
-//Test Higher method 
+//Test higher method 
     @Test
     public void testHigher(){
         assertEquals(5, higher(3,3));
