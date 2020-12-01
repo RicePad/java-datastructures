@@ -28,6 +28,11 @@ public class StringHelper {
     }
     
 
+
+// 1. write basic scenario
+// 2. write @test annotation
+// 3. write void function and label it with appropriate scenario
+// 4. use either assert, true or false. 
     
 
 }
