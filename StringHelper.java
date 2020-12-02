@@ -33,6 +33,13 @@ public class StringHelper {
 // 2. write @test annotation
 // 3. write void function and label it with appropriate scenario
 // 4. use either assert, true or false. 
+// 5. optional: @before and @after annotation
+// 6. @BeforeClass: must be of static void. only executes ones before the class. use for the database connnection.
+                    //concerns with performance.
+// 7. @AfterClass:  must be of static void. only executes ones before the class. use for the database connnection.
+                    //concerns with performance.
+
+//8. assertArrayEquals(). Array comparisson with different memory addresses.
     
 
 }
