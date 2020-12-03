@@ -2,9 +2,12 @@ package test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 import org.junit.Test;
 
 public class StringHelper {
+
+
 
 	public static String truncateAInFirst2Positions(String str) {
 		if (str.length() <= 2)
@@ -16,6 +19,8 @@ public class StringHelper {
 		return first2Chars.replaceAll("A", "") 
 				+ stringMinusFirst2Chars;
 	}
+
+	
 
 	public static boolean areFirstAndLastTwoCharactersTheSame(String str) {
 
@@ -29,8 +34,11 @@ public class StringHelper {
 		String last2Chars = str.substring(str.length() - 2);
 
 		return first2Chars.equals(last2Chars);
-    }
-    
+	}
+	
+
+	
+    //write mockito test
     @Test
     public void testTruncateA(){
         String message = "AABCD => BC";

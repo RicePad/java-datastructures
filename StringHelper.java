@@ -40,6 +40,7 @@ public class StringHelper {
                     //concerns with performance.
 
 //8. assertArrayEquals(). Array comparisson with different memory addresses.
-    
+//9. @Test(expected=NullPointerException.class); use test a try and catch exception.
+//10. @Test(timeout=100); use to test performance on how fast an algorithm is.
 
 }
